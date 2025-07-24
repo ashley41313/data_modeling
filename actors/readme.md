@@ -2,9 +2,21 @@
 
 ## Overview
 
-This folder contains SQL scripts to create, populate, and maintain an **actors** dataset with cumulative film data and a historical slowly changing dimension (SCD) tracking changes in actor quality and activity status over time.
+This project builds a structured pipeline for transforming raw actor film data into cumulative summaries and historical records using SQL. It compresses film data by actor/year and implements a Slowly Changing Dimension (SCD Type 2) model to track changes in actor quality and activity status over time.
 
 ---
+
+## Folder Structure
+actors/
+├── sql/ # SQL scripts for creating and populating the tables
+│ ├── compress_and_cumulate_films.sql
+│ ├── actors_history_scd.sql
+│ └── incremental_update_actors_history_scd.sql
+├── tables/ # Final output tables created and populated by the SQL scripts
+│ ├── actors.zip # actors table was compressed
+│ ├── actors_history_scd
+│ └── actors_scd_type (type definition used in SCD)
+└── README.md
 
 ## Source Table: `actors`
 
