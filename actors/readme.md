@@ -8,14 +8,15 @@ This project builds a structured pipeline for transforming raw actor film data i
 
 ## Folder Structure
 actors/
-├── sql/ # SQL scripts for creating and populating the tables
-│ ├── compress_and_cumulate_films.sql
-│ ├── actors_history_scd.sql
-│ └── incremental_update_actors_history_scd.sql
-├── tables/ # Final output tables created and populated by the SQL scripts
-│ ├── actors.zip # actors table was compressed
-│ ├── actors_history_scd
-│ └── actors_scd_type (type definition used in SCD)
+├── sql/
+│   ├── compress_and_cumulate_films.sql
+│   ├── actors_history_scd.sql
+│   └── incremental_update_actors_history_scd.sql
+├── tables/
+│   ├── actors.zip 
+│   ├── actors_history_scd
+│   └── actors_scd_type
+├── actors.zip
 └── README.md
 
 ## Source Table: `actors`
