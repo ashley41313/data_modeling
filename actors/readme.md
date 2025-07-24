@@ -24,10 +24,28 @@ The `actors` table stores raw film data for actors per film per year, including 
 
 ### Sample Data
 
-"Fred Astaire" "nm0000001" "The Towering Inferno" 1974 39888 7 "tt0072308"
-"Fred Astaire" "nm0000001" "The Amazing Dobermans" 1976 369 5.3 "tt0074130"
-"Lauren Bacall" "nm0000002" "Murder on the Orient Express" 1974 56620 7.3 "tt0071877"
-"Brigitte Bardot" "nm0000003" "The Bear and the Doll" 1970 431 6.4 "tt0064779"
+| Actor          | Actor ID   | Film                          | Year | Votes  | Rating | Film ID    |
+|----------------|------------|-------------------------------|------|--------|--------|------------|
+| Fred Astaire   | nm0000001  | The Towering Inferno           | 1974 | 39888  | 7.0    | tt0072308  |
+| Fred Astaire   | nm0000001  | The Amazing Dobermans          | 1976 | 369    | 5.3    | tt0074130  |
+| Fred Astaire   | nm0000001  | The Purple Taxi                | 1977 | 533    | 6.6    | tt0076851  |
+| Fred Astaire   | nm0000001  | Ghost Story                   | 1981 | 7731   | 6.3    | tt0082449  |
+| Lauren Bacall  | nm0000002  | Murder on the Orient Express   | 1974 | 56620  | 7.3    | tt0071877  |
+| Lauren Bacall  | nm0000002  | The Shootist                  | 1976 | 22409  | 7.6    | tt0075213  |
+| Lauren Bacall  | nm0000002  | HealtH                       | 1980 | 693    | 5.7    | tt0079256  |
+| Lauren Bacall  | nm0000002  | The Fan                      | 1981 | 2038   | 5.8    | tt0082362  |
+| Lauren Bacall  | nm0000002  | Appointment with Death        | 1988 | 4058   | 6.2    | tt0094669  |
+| Lauren Bacall  | nm0000002  | Mr. North                    | 1988 | 1297   | 5.9    | tt0095665  |
+| Lauren Bacall  | nm0000002  | Innocent Victim              | 1989 | 103    | 5.9    | tt0099846  |
+| Lauren Bacall  | nm0000002  | Misery                       | 1990 | 186886 | 7.8    | tt0100157  |
+| Lauren Bacall  | nm0000002  | All I Want for Christmas      | 1991 | 4564   | 6.0    | tt0101301  |
+| Lauren Bacall  | nm0000002  | Ready to Wear                | 1994 | 14444  | 5.2    | tt0110907  |
+| Lauren Bacall  | nm0000002  | The Mirror Has Two Faces      | 1996 | 16564  | 6.7    | tt0117057  |
+| Lauren Bacall  | nm0000002  | My Fellow Americans           | 1996 | 14178  | 6.5    | tt0117119  |
+| Lauren Bacall  | nm0000002  | Le jour et la nuit            | 1997 | 1014   | 1.6    | tt0119418  |
+| Lauren Bacall  | nm0000002  | A Star for Two                | 1991 | 227    | 5.5    | tt0166817  |
+| Lauren Bacall  | nm0000002  | Diamonds                    | 1999 | 1493   | 5.5    | tt0167423  |
+| Lauren Bacall  | nm0000002  | Presence of Mind             | 1999 | 540    | 5.5    | tt0211577  |
 
 ## SQL Scripts
 
