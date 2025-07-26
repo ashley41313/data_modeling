@@ -1,4 +1,4 @@
-# Week 4: Applying Analytical Patterns
+# Applying Analytical Patterns
 
 This assignment explores key SQL analytical patterns using window functions, `GROUPING SETS`, and state change tracking. The goal is to gain insight into player and team performance by writing efficient, readable queries on NBA game data.
 
