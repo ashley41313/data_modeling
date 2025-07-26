@@ -1,9 +1,26 @@
+-- ================================================================
+-- Script: actors_history_scd.sql
+
+-- Purpose:
+--   - Define and populate a slowly changing dimension (SCD Type 2)
+--     table for actors' quality_class and is_active status.
+--   - Tracks historical changes over time using start and end years.
+
+-- Input Tables:
+--   - actors  (stores actors' yearly cumulative film data with quality_class and is_active status)
+
+-- Output Tables:
+--   - actors_history_scd  (SCD Type 2 dimension table tracking changes over time)
+
 -- Notes:
 --   - This is a backfill query that can populate the entire actors_history_scd
 --     table in a single query by analyzing all historical years.
 --   - It uses window functions and grouping to detect changes and create
 --     historical versioned records.
 
+-- Author: Ashley Eckert
+-- Created: 2025-07-24
+-- ================================================================
 
 -- DDL for actors_history_scd table
 -- This table models a Type 2 slowly changing dimension by capturing
